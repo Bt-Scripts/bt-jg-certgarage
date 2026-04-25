@@ -3,7 +3,7 @@ game 'gta5'
 lua54 'yes'
 
 description 'Certification system for jg job garages'
-author 'butter'
+author 'bt-scripts'
 version '1.0.0'
 
 shared_scripts {
@@ -13,15 +13,15 @@ shared_scripts {
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server/main.lua',
+    'server.lua',
 }
 
 client_scripts {
-    'client/main.lua',
+    'client.lua',
 }
 
 dependencies {
     'ox_lib',
     'oxmysql',
-    'qb-core',
+    'es_extended',
 }
